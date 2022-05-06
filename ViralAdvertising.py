@@ -6,7 +6,7 @@ def viralAdvertising(n):
     liked_people = 0 
     recipients = 5
     for i in range(n):
-        liked_people = round(recipients/2)
+        liked_people = math.floor(recipients/2)
         recipients = liked_people * 3 
         total += liked_people
     return total 
